@@ -1,0 +1,410 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    background-color: #f8edeb;
+}
+
+/*navbar start*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: #fdc8bf;
+}
+
+.name {
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 1rem;
+}
+
+#nav-items {
+    height: 100%;
+    color: rgb(70, 69, 69);
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+#nav-items ul {
+    display: flex;
+}
+
+#nav-items li a {
+    display: block;
+    text-decoration: none;
+    color: #525151;
+    padding: 1.3rem;
+}
+
+#nav-items li a:hover {
+    color: #fdc8bf;
+    transition: 0.2s;
+}
+
+.name:hover {
+    color: #fb831a;
+    transition: 2s;
+}
+
+#nav-toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 21px;
+}
+
+#nav-toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #525151;
+    border-radius: 20px;
+}
+
+/*navbar end*/
+
+/*hero start*/
+
+.hero-container {
+    background-image: linear-gradient(rgba(248, 245, 245, 0.3), rgba(244, 239, 239, 0.5)), url('img/holiday.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+
+.hero {
+    display: flex;
+    text-align: center;
+    padding: 12rem 12rem;
+}
+
+.hero h1 {
+    letter-spacing: 6px;
+    font-size: 2rem;
+    padding: 5px;
+    color: #525151;
+    font-family: 'Rampart One', cursive;
+    background-color: rgba(73, 247, 247, 0.2);
+    width: 650px;
+}
+
+#hero-text {
+    font-size: 2.5rem;
+    padding: 5px;
+    color:rgb(234, 243, 249)
+}
+
+/*hero end*/
+
+/*about section start*/
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .container{
+    margin: 100px;
+}
+
+section h2{
+    color:#525151;
+    font-size: 40px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+section .text-container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.text-box{
+    height: 400px;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    background-image: linear-gradient(#fdc8bf, #f8edeb);
+    border-radius: 15px;
+    color:#525151;
+}
+
+section .text-container .text-box-img img{
+    height: 400px;
+    margin: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+section .text-container .text-box h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color:#525151;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+/*about section end*/
+
+/*footer start*/
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#insta {
+    padding: 0 15px 8px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+#youtube {
+    padding: 0 15px 8px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+#spotify {
+    padding: 0 15px 8px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+#soundcloud {
+    padding: 0 15px 8px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+#insta:hover {
+    transform: scale(1.6);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+#insta:active {
+    transform: translateY(1px);
+}
+
+#spotify:hover {
+    transform: scale(1.6);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+#spotify:active {
+    transform: translateY(1px);
+}
+
+#soundcloud:hover {
+    transform: scale(1.6);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+#soundcloud:active {
+    transform: translateY(1px);
+}
+
+#youtube:hover {
+    transform: scale(1.6);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+#youtube:active {
+    transform: translateY(1px);
+}
+
+footer h4 {
+    color:#525151;
+    font-size: 1.2rem;
+    background-color:#fcd4cd;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Rampart One', cursive;
+}
+
+footer p{
+    color: #f7dfdb;
+    font-size: 0.8rem;
+    margin-top: 15px;
+    background-color:#292929;
+    text-align: center;
+    padding: 15px;
+}
+
+/*footer end*/
+
+@media (max-width: 720px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #nav-toggle-button {
+        display: flex;
+    }
+
+    #nav-items {
+        display: none;
+        width: 100%;
+    }
+
+    #nav-items ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #nav-items ul li {
+        text-align: center;
+    }
+
+    #nav-items ul li a {
+        padding: 0.8rem 1rem;
+    }
+
+    #nav-items.active {
+        display: flex;
+    }
+    #nav-items li a:hover {
+        background-color: #525151;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+        width: 400px;
+    }
+    
+    #hero-text {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 900px){
+    #header-section h1{
+    font-size: 2rem;
+    text-align: center;
+    }
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-box-img img{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .text-box{
+        width: 450px;
+    }
+    #pepe {
+        height: 600px;
+        width: 450px;
+    }
+    #studio {
+        height: 600px;
+        width: 450px;
+    }
+    #bbc {
+        height: 650px;
+        width: 400px;
+    }
+}
+
+@media (min-width: 900px){
+    #loser {
+        width: 300px;
+        height: 300px;
+    }
+    #good-innings {
+        width: 300px;
+        height: 300px;
+    }
+    #better-life {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@keyframes fade-bottom {
+    0% {
+    transform: translateY(50px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+    0% {
+    transform: translateX(-100px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+    transform: translateX(100px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
