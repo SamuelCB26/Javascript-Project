@@ -537,7 +537,8 @@ footer p{
 
 @media (max-width: 480px) {
     section h2 {
-        font-size: 0.8rem;
+        font-size: 1.5rem;
+        text-align: center;
     }
     .slider-container {
         width: 93vw;
