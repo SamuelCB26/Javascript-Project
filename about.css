@@ -138,6 +138,16 @@ section .text-container{
     flex-wrap: nowrap;
 }
 
+section .text-container .text-box h3{
+    font-family: 'Monofett', cursive;
+    font-size: 2rem;
+}
+
+p{
+    font-family: 'Courgette', cursive;
+    font-size: 1.1rem;
+}
+
 .text-box{
     height: 400px;
     margin: 20px;
@@ -155,7 +165,6 @@ section .text-container .text-box-img img{
 }
 
 section .text-container .text-box h3{
-    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
